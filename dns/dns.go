@@ -31,7 +31,7 @@ func StartDNS(dnsServer, listenIP string) {
 				if host == "" {
 					continue
 				}
-				// atomic action
+				// atomic action, not worry
 				dnsServer = net.JoinHostPort(host, "53")
 				glog.Infoln("set dns server to", host)
 			}
